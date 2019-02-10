@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-areas: 'header header header header header '
+                         'nav nav nav nav nav '
+                         'section section section section section '
+                         'aside aside aside aside aside'
+                         'footer footer footer footer footer';
+    grid-auto-rows: 10vh 20vh 50vh 40vh;              
+    grid-column-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: green;
+    display: flex;       
+}
+
+nav {
+    grid-area: nav;
+    background-image: url(https://github.com/academia01-2019/d-N-105-psdNotify/blob/master/banner.png?raw=true);
+    display: flex;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 50pt;
+    margin-left: 8pt;
+}
+
+h3 {
+    color: white;
+    font-family: 'Tillana', cursive;
+    font-size: 18pt;
+    margin-left: 8pt;   
+}
+
+.icones {
+    grid-area: icones;
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ios {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px;
+
+}
+
+.ios:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 20%;
+    border: 2px solid red;
+
+}
+
+.windows {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px;
+
+}
+
+.windows:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 20%;
+    border: 2px solid red;
+
+}
+
+.android {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px
+
+}
+
+.android:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 20%;
+    border: 2px solid red;
+    
+
+}
+
+
+section {
+    grid-area: aside;
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;     
+
+}
+
+.centro-icones {
+    grid-area: aside;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: space-around;
+}
+
+.centro-icones p {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    margin-left: 8pt;
+
+}
+
+
+.icone-1 {
+    border-radius: 100px;
+    background-color: green;
+    opacity: 0.5;
+    padding: 10px
+
+}
+
+.icone-2 {
+    border-radius: 100px;
+    background-color: green;
+    opacity: 0.5;
+    padding: 10px
+
+}
+
+.icone-3 {
+    border-radius: 100px;
+    background-color: green;
+    opacity: 0.5;
+    padding: 10px
+
+}
+
+aside {
+    grid-area: aside;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+aside p {
+    width: 150px;
+    color: white;
+    font-size: 10pt;
+}
+aside h2{
+    font-size: 14pt;
+    color: white;
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div a {
+    font-family: sans-serif;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
